@@ -1,0 +1,4 @@
+H:\CADA23\OsmdroidAndroidBinding\bin\Release\OsmdroidAndroidBinding.dll
+H:\CADA23\OsmdroidAndroidBinding\bin\Release\OsmdroidAndroidBinding.pdb
+H:\CADA23\OsmdroidAndroidBinding\obj\Release\OsmdroidAndroidBinding.dll
+H:\CADA23\OsmdroidAndroidBinding\obj\Release\OsmdroidAndroidBinding.pdb

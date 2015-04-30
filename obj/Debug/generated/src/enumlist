@@ -1,0 +1,6 @@
+org.osmdroid.ResourceProxy$bitmap:Osmdroid:ResourceProxy.bitmap
+org.osmdroid.ResourceProxy$string:Osmdroid:ResourceProxy.string
+org.osmdroid.api.Marker$Anchor:Osmdroid.Api:Marker.Anchor
+org.osmdroid.views.MapControllerOld$AnimationType:Osmdroid.Views:MapControllerOld.AnimationType
+org.osmdroid.views.overlay.OverlayItem$HotspotPlace:Osmdroid.Views.Overlay:OverlayItem.HotspotPlace
+org.osmdroid.views.overlay.ScaleBarOverlay$UnitsOfMeasure:Osmdroid.Views.Overlay:ScaleBarOverlay.UnitsOfMeasure

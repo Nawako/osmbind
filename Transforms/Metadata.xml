@@ -1,0 +1,95 @@
+<metadata>
+
+<!-- Tried to add a node but it seems to be more complicated than my competence
+///////////////////////////////////////////////////////////////////////////////
+<add-node
+path="/api/package[@name='org.osmdroid.bonuspack.kml']">
+<class abstract="false" deprecated="not deprecated" extends="android.os.Parcelable" 
+extends-generic-aware="android.os.Parcelable" final="false" name="KmlDocument"
+static="true" visibility="public">
+</class>
+</add-node>
+-->
+
+<!-- fixup the namespaces, notice that we have to do one for each namespace. -->
+<attr path="/api/package[@name='org.osmdroid']" name="managedName">Osmdroid</attr>
+<attr path="/api/package[@name='org.osmdroid.api']" name="managedName">Osmdroid.Api</attr>
+<attr path="/api/package[@name='org.osmdroid.contributor']" name="managedName">Osmdroid.Contributor</attr>
+<attr path="/api/package[@name='org.osmdroid.contributor.util']" name="managedName">Osmdroid.Contributor.Util</attr>
+<attr path="/api/package[@name='org.osmdroid.contributor.util.constants']" name="managedName">Osmdroid.Util.Constants</attr>
+<attr path="/api/package[@name='org.osmdroid.events']" name="managedName">Osmdroid.Events</attr>
+<attr path="/api/package[@name='org.osmdroid.tileprovider']" name="managedName">Osmdroid.TileProvider</attr>
+<attr path="/api/package[@name='org.osmdroid.tileprovider.constants']" name="managedName">Osmdroid.TileProvider.Constants</attr>
+<attr path="/api/package[@name='org.osmdroid.tileprovider.modules']" name="managedName">Osmdroid.TileProvider.Modules</attr>
+<attr path="/api/package[@name='org.osmdroid.tileprovider.tilesource']" name="managedName">Osmdroid.TileProvider.TileSource</attr>
+<attr path="/api/package[@name='org.osmdroid.tileprovider.util']" name="managedName">Osmdroid.TileProvider.Util</attr>
+<attr path="/api/package[@name='org.osmdroid.util']" name="managedName">Org.Osmdroid.Util</attr>
+<attr path="/api/package[@name='org.osmdroid.views']" name="managedName">Osmdroid.Views</attr>
+<attr path="/api/package[@name='org.osmdroid.views.overlay']" name="managedName">Osmdroid.Views.Overlay</attr>
+<attr path="/api/package[@name='org.osmdroid.views.util.constants']" name="managedName">Osmdroid.Views.Util.Constants</attr>
+<attr path="/api/package[@name='org.osmdroid.bonuspack.overlays']" name="managedName">Osmdroid.Bonuspack.Overlays</attr>
+<attr path="/api/package[@name='org.osmdroid.bonuspack.routing']" name="managedName">Osmdroid.Bonuspack.Routing</attr>
+<attr path="/api/package[@name='org.osmdroid.bonuspack.overlays.marker']" name="managedName">Osmdroid.Bonuspack.Overlays.Marker</attr>
+<attr path="/api/package[@name='org.osmdroid.bonuspack.kml']" name="managedName">Osmdroid.Bonuspack.Kml</attr>
+
+<!-- different scoping rules in .NET, so we make these public -->
+<attr path="/api/package[@name='org.osmdroid.tileprovider.modules']/class[@name='MapTileModuleProviderBase.TileLoader']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.tileprovider.modules']/class[@name='MapTileModuleProviderBase.TileLoader']/method[@name='loadTile']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.tileprovider']/class[@name='MapTileProviderBase.ScaleTileLooper']/method[@name='handleTile']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.tileprovider']/class[@name='MapTileProviderBase.ZoomInTileLooper']/method[@name='handleTile']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.tileprovider']/class[@name='MapTileProviderBase.ZoomOutTileLooper']/method[@name='handleTile']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.bonuspack.kml']/class[@name='KmlDocument']" name="visibility">public</attr>
+<!-- Draw() seems to be public for android so we need to be consistent about it. C# doesn't like to mix visibility during inheritance. -->
+<attr path="/api/package[@name='org.osmdroid.views.overlay']/class[@name='Overlay']/method[@name='draw']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.views.overlay']/class[@name='TilesOverlay']/method[@name='draw']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.views.overlay']/class[@name='PathOverlay']/method[@name='draw']" name="visibility">public</attr>
+<!-- added for 4.2 jar -->
+<attr path="/api/package[@name='org.osmdroid.views.overlay.compass']/class[@name='CompassOverlay']/method[@name='draw']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.bonuspack.clustering']/class[@name='MarkerClusterer']/method[@name='draw']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.bonuspack.overlays']/class[@name='FolderOverlay']/method[@name='draw']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.bonuspack.overlays']/class[@name='GroundOverlay']/method[@name='draw']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.bonuspack.overlays']/class[@name='Polygon']/method[@name='draw']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.bonuspack.overlays']/class[@name='Polyline']/method[@name='draw']" name="visibility">public</attr>
+
+
+<attr path="/api/package[@name='org.osmdroid.views.overlay.mylocation']/class[@name='MyLocationNewOverlay']/method[@name='draw']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.views.overlay']/class[@name='ItemizedOverlay']/method[@name='draw']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.views.overlay']/class[@name='NonAcceleratedOverlay']/method[@name='draw']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.views.overlay']/class[@name='ScaleBarOverlay']/method[@name='draw']" name="visibility">public</attr>
+<remove-node path="/api/package[@name='org.osmdroid.tileprovider.tilesource']/class[@name='CloudmadeTileSource']" />
+
+<!-- Return IMapController in MapView.Controller so that we match IMapView. -->
+<attr path="/api/package[@name='org.osmdroid.views']/class[@name='MapView']/method[@name='getController']" name="managedReturn">
+Osmdroid.Api.IMapController
+</attr>
+<!-- We need to rename class MapView.Projection because it conflicts with a property of the same name -->
+<attr path="/api/package[@name='org.osmdroid.views']/class[@name='MapView.Projection']" name="managedName">
+MapView.ProjectionImpl
+</attr>
+<!-- Change return type to match IMapView.Projection property return type -->
+<attr path="/api/package[@name='org.osmdroid.views']/class[@name='MapView']/method[@name='getProjection']" name="managedReturn">
+Osmdroid.Api.IProjection
+</attr>
+
+
+<attr path="/api/package[@name='org.osmdroid.views.overlay']/class[@name='OverlayManager']/method[@name='get' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn"> Java.Lang.Object
+</attr> 
+
+<!-- For update osmbonuspack_v5.1 but doesn't work so downgraded the version to v4.5 (v4.5 don't have these class)
+<attr path="/api/package[@name='org.osmdroid.bonuspack.cachemanager']/class[@name='CacheManager.CleaningTask']/method[@name='DoInBackground' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">
+</attr> 
+Java.Lang.
+
+<attr path="/api/package[@name='org.osmdroid.bonuspack.cachemanager']/class[@name='CacheManager.DownloadingTask']/method[@name='DoInBackground' and count(parameter)=1 and parameter[1][@type='int']]" name="managedReturn">
+</attr> 
+-->
+
+<!-- fix up some parameter names -->
+<attr path="/api/package[@name='org.osmdroid.views']/class[@name='MapView']/method[@name='setTileSource']/parameter[@name='p0']" name="name">tileSource</attr>
+<attr path="/api/package[@name='org.osmdroid.views']/class[@name='MapView']/method[@name='setBuiltInZoomControls']/parameter[@name='p0']" name="name">show</attr>
+<attr path="/api/package[@name='org.osmdroid.api']/interface[@name='IMapController']/method[@name='setCenter']/parameter[@name='p0']" name="name">centreOfMap</attr>
+<attr path="/api/package[@name='org.osmdroid.bonuspack.routing']/class[@name='RoadLink']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.bonuspack.kml']/class[@name='KmlFeature']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.bonuspack.kml.KmlFeature']" name="visibility">public</attr>
+<attr path="/api/package[@name='org.osmdroid.bonuspack.overlays']/class[@name='MapEventsOverlay']/method[@name='draw']" name="visibility">public</attr>
+</metadata>  

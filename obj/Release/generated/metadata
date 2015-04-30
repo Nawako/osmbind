@@ -1,0 +1,4 @@
+<metadata>
+  <attr path="/api/package[@name='org.osmdroid.api']/interface[@name='IMapView']/method[@name='setBackgroundColor']/parameter[@name='color']" name="enumType">Android.Graphics.Color</attr>
+  <attr path="/api/package[@name='org.osmdroid.api']/interface[@name='IMyLocationOverlay']/method[@name='onStatusChanged']/parameter[@name='status']" name="enumType">Android.Locations.Availability</attr>
+</metadata>
